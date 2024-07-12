@@ -1,0 +1,22 @@
+.visualizer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 200px; /* Высота контейнера */
+}
+
+.bar {
+    width: 10px; /* Ширина прямоугольников */
+    background-color: #4CAF50; /* Цвет прямоугольников */
+    margin: 0 2px; /* Отступы между прямоугольниками */
+    animation: bar-rise 0.1s linear alternate infinite; /* Анимация подъема */
+}
+
+@keyframes bar-rise {
+    from {
+        transform: scaleY(1);
+    }
+    to {
+        transform: scaleY(2); /* Увеличение высоты прямоугольников */
+    }
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:
+          radial-gradient(at 9% 89%, hsl(215, 53%, 20%) 0px, transparent 50%),
+          radial-gradient(at 72% 6%, hsl(249, 52%, 43%) 0px, transparent 50%),
+          radial-gradient(at 24% 19%, hsl(17, 3%, 57%) 0px, transparent 50%),
+          radial-gradient(at 65% 6%, hsla(6, 79%, 76%, 1) 0px, transparent 50%),
+          radial-gradient(at 20% 98%, hsl(318, 73%, 19%) 0px, transparent 50%),
+          radial-gradient(at 44% 9%, hsl(47, 15%, 18%) 0px, transparent 50%),
+          radial-gradient(at 10% 9%, hsl(232, 57%, 16%) 0px, transparent 50%);
+}
+
+.background {
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+}
+
+.background img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-width: 50%;
+  min-height: 50%;
+  filter: blur(15px);
+  -webkit-filter: blur(50px);
+  transform: scale(1.1);
+}
+
+.container {
+  background-color: #e7e7e7;
+  min-height: 500px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease;
+}
+
+.container:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+

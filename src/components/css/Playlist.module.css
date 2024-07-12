@@ -1,0 +1,50 @@
+.playlist {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background: #2c3e50;
+    color: #fff;
+
+    transition: transform 0.5s ease;
+    transform: translateX(-300px);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.playlist.open {
+    transform: translateX(0);
+}
+.track {
+    background: #394956;
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.track:hover {
+    background: #444;
+}
+
+.playlist h2 {
+    margin-top: 0;
+}
+
+.playlist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.playlist li {
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.playlist li:hover,
+.playlist li.active {
+    background: #333;
+}

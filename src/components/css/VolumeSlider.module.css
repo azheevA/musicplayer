@@ -1,0 +1,34 @@
+.volumeSlider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.volumeIcon {
+    color: #ecf0f1;
+    font-size: 1.5rem;
+}
+
+.rangeSlider {
+    position: relative;
+    width: 100px;
+    height: 12px;
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.rangeSlider:hover {
+    background: linear-gradient(135deg, #3d566e, #2c3e50);
+}
+
+.progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    transition: width 0.3s ease;
+}
