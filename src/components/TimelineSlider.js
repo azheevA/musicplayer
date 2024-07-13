@@ -19,7 +19,7 @@ const TimelineSlider = ({ currentTime, duration, onChange }) => {
     return (
         <div className={styles.timelineSlider}>
             <div className={styles.timeline}>
-                <small className={styles.time}>0:00</small>
+                <small className={styles.time}>{Math.floor(progress / 60) + ":" + ("0" + Math.floor(progress % 60)).slice(-2)}</small>
                 <small className={styles.fulltime}>
                     {Math.floor(duration / 60) + ":" + ("0" + Math.floor(duration % 60)).slice(-2)}
                 </small>

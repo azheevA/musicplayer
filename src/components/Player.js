@@ -35,7 +35,7 @@ const Player = () => {
     const sliderRef = useRef(null);
 
     useEffect(() => {
-        const newAudio = new Audio(`/assets/tracks/${tracks[trackId]}.m4a`);
+        const newAudio = new Audio(`${process.env.PUBLIC_URL}/assets/tracks/${tracks[trackId]}.m4a`);
         newAudio.volume = volume / 100;
         newAudio.loop = isLooping;
         setAudio(newAudio);
@@ -149,7 +149,7 @@ const Player = () => {
                     togglePlaylist={togglePlaylist}
                 />
             </div>
-            <img src={`/assets/covers/${covers[trackId]}.jpg`} alt="cover not found" className={styles.cover} />
+            <img src={`${process.env.PUBLIC_URL}/assets/covers/${covers[trackId]}.jpg`} alt="cover not found" className={styles.cover} />
             <h1 className={styles.trackTitle}>{tracks[trackId]}</h1>
             <span className={styles.artistName}>{artists[trackId]}</span>
             <TimelineSlider
